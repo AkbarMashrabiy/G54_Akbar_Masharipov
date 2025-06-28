@@ -129,9 +129,15 @@ public class Main {
                 Waiter waiter = waiterService.getWaiterWithId(waiterId);
                 if (waiter != null) {
                     tableService.addTable(new Table(waiterId, number, true ));
-                    List<Table> lastTables = waiter.getTables();
-                    lastTables.add(tableService.getTableWithNumber(number));
-                    waiter.setTables(lastTables);
+                    if (waiter.getTables() != null) {
+                        List<Table> lastTables = waiter.getTables();
+                        lastTables.add(tableService.getTableWithNumber(number));
+                        waiter.setTables(lastTables);
+                    } else {
+                        List<Table> tables = new ArrayList<>();
+                        tables.add(tableService.getTableWithNumber(number));
+                        waiter.setTables(tables);
+                    }
 
                     System.out.println("Table added Successfully!");
                     writeTablesToJson();

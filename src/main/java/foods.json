@@ -1,8 +1,14 @@
 [
   {
-    "id": "89c363ce-9727-4d44-b9b3-f42592255b4d",
+    "id": "7bcac17c-8dc0-4988-98e6-af7fe1ea5e9d",
+    "name": "osh",
+    "price": 25000.0,
+    "active": true
+  },
+  {
+    "id": "d7467569-af79-4a11-a63b-ee7f87905141",
     "name": "lavash",
-    "price": 1212.0,
+    "price": 20000.0,
     "active": true
   }
 ]
