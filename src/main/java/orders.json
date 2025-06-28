@@ -1,0 +1,22 @@
+[
+  {
+    "id": "160a9ca6-2a14-4ace-9f8c-09e139d46ce3",
+    "tableId": "8d2953a6-067d-41f0-b6b6-f8017c27ad64",
+    "waiterId": "dde94fff-aa6d-4eee-ab31-f3367c249d40",
+    "foods": [
+      {
+        "id": "59addf84-233b-4413-82eb-430150759f96",
+        "name": "osh",
+        "price": 20000.0,
+        "active": true
+      },
+      {
+        "id": "59addf84-233b-4413-82eb-430150759f96",
+        "name": "osh",
+        "price": 20000.0,
+        "active": true
+      }
+    ],
+    "overallPrice": 40000.0
+  }
+]

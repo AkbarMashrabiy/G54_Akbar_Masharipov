@@ -91,9 +91,17 @@ public class Main {
 
                     String waiterId = table.getWaiterId();
                     Waiter waiter = waiterService.getWaiterWithId(waiterId);
+
+                    if (waiter.getAllOrdersProfit() != null){
+
                     Double profit = waiter.getAllOrdersProfit();
                     Double lastProfit = profit+ overallSum;
                     waiter.setAllOrdersProfit(lastProfit);
+                    }else {
+                        waiter.setAllOrdersProfit(overallSum);
+                    }
+
+
 
 
                     return;
